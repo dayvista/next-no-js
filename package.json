@@ -1,50 +1,50 @@
 {
-  "name": "next-no-js",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "yarn modfed:build:entry && echo \"BOOTSTRAP=$(node env.js)\" >> .env && next build",
-    "modfed:build:entry": "./node_modules/.bin/webpack --json './public/modfed-entry.json'",
-    "lint:fix": "prettier '**/*.{ts,tsx,js,mdx}' --write",
-    "next:build": "next build",
-    "start": "next start",
-    "export": "next export",
-    "clean": "rm -rf .next",
-    "test": "tsc"
-  },
-  "author": "shane osboune",
-  "dependencies": {
-    "@mdx-js/loader": "^1.6.22",
-    "@mdx-js/react": "^1.6.22",
-    "@next/mdx": "^10.0.7",
-    "@types/cookies": "^0.7.6",
-    "@types/react": "^17.0.2",
-    "cookies": "^0.8.0",
-    "esbuild-loader": "^2.9.1",
-    "formik": "^2.2.6",
-    "joi": "^17.4.0",
-    "next": "12.0.3",
-    "preact": "^10.5.15",
-    "prettier": "^2.2.1",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "rehype-highlight": "^4.1.0",
-    "sync-rpc": "^1.3.6",
-    "typescript": "^4.4.4",
-    "uuid": "^8.3.2",
-    "webpack": "5.21.2",
-    "webpack-cli": "^4.5.0",
-    "yup": "^0.32.9"
-  },
-  "resolutions": {
-    "webpack": "5.21.2"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.0",
-    "highlight.js": "^10.6.0",
-    "postcss": "^8.3.11",
-    "tailwindcss": "^2.2.19",
-    "@tailwindcss/forms": "^0.2.1"
-  }
+    "name": "next-no-js",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "yarn modfed:build:entry && echo \"BOOTSTRAP=$(node env.js)\" >> .env && next build && npx webpack",
+        "modfed:build:entry": "./node_modules/.bin/webpack --json './public/modfed-entry.json'",
+        "lint:fix": "prettier '**/*.{ts,tsx,js,mdx}' --write",
+        "next:build": "next build",
+        "start": "next start",
+        "export": "next export",
+        "clean": "rm -rf .next",
+        "test": "tsc"
+    },
+    "author": "shane osboune",
+    "dependencies": {
+        "@mdx-js/loader": "^1.6.22",
+        "@mdx-js/react": "^1.6.22",
+        "@next/mdx": "^10.0.7",
+        "@types/cookies": "^0.7.6",
+        "@types/react": "^17.0.2",
+        "cookies": "^0.8.0",
+        "esbuild-loader": "^2.9.1",
+        "formik": "^2.2.6",
+        "joi": "^17.4.0",
+        "next": "12.0.3",
+        "preact": "^10.5.15",
+        "prettier": "^2.2.1",
+        "react": "17.0.1",
+        "react-dom": "17.0.1",
+        "rehype-highlight": "^4.1.0",
+        "sync-rpc": "^1.3.6",
+        "typescript": "^4.4.4",
+        "uuid": "^8.3.2",
+        "webpack": "5.21.2",
+        "webpack-cli": "^4.5.0",
+        "yup": "^0.32.9"
+    },
+    "resolutions": {
+        "webpack": "5.21.2"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.0",
+        "highlight.js": "^10.6.0",
+        "postcss": "^8.3.11",
+        "tailwindcss": "^2.2.19",
+        "@tailwindcss/forms": "^0.2.1"
+    }
 }

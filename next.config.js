@@ -5,6 +5,7 @@ const withMDX = require("@next/mdx")({
         rehypePlugins: [rehypePrism],
     },
 });
+
 module.exports = withMDX({
     pageExtensions: ["js", "jsx", "tsx", "ts", "mdx"],
     async redirects() {
