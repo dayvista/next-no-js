@@ -3,7 +3,7 @@ import { BrowserComponent } from "~/modfed/BrowserComponent";
 import { DemoBlock } from "~/ui/Type";
 import { GetStaticProps } from "next";
 import { Gallery } from "~/browser-components/Gallery";
-import Post from "./_data.mdx";
+// import Post from "./_data.mdx";
 
 type Props = {
     data: {
@@ -14,7 +14,7 @@ type Props = {
 export default function Index(props: Props) {
     return (
         <>
-            <Post />
+            {/* <Post /> */}
             <DemoBlock>
                 <BrowserComponent>
                     <Gallery {...props.data} />

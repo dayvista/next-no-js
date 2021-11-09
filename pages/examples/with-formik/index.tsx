@@ -3,8 +3,8 @@ import Cookies from "cookies";
 import FormikForm from "~/browser-components/FormikForm";
 import { FieldError } from "~/lib";
 import { BrowserComponent } from "~/modfed/BrowserComponent";
-import Page from "./_with_formik_page.mdx";
-import Md from "./_md_stress.mdx";
+// import Page from "./_with_formik_page.mdx";
+// import Md from "./_md_stress.mdx";
 
 type Props =
     | {
@@ -24,7 +24,7 @@ export default function WithForm(props: Props) {
     };
     return (
         <div>
-            <Page />
+            {/* <Page /> */}
             <div className="my-4">
                 <BrowserComponent>
                     <FormikForm {...formProps} />
@@ -32,7 +32,7 @@ export default function WithForm(props: Props) {
             </div>
             <div className="py-4">
                 <hr />
-                <Md />
+                {/* <Md /> */}
             </div>
         </div>
     );

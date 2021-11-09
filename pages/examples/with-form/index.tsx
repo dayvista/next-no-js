@@ -2,7 +2,7 @@ import { GetServerSideProps } from "next";
 import Cookies from "cookies";
 import { Form } from "~/browser-components/Form";
 import { BrowserComponent } from "~/modfed/BrowserComponent";
-import Page from "./_with_form_data.mdx";
+// import Page from "./_with_form_data.mdx";
 import { DemoBlock } from "~/ui/Type";
 
 type FormError = {
@@ -28,7 +28,7 @@ export default function Index(props: Props) {
     };
     return (
         <div>
-            <Page name={"shane"} />
+            {/* <Page name={"shane"} /> */}
             <aside>
                 <DemoBlock>
                     <BrowserComponent>
